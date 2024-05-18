@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="{{url_for ('static', filename='log.css')}}">
+</head>
+<body>
+    <div class=container>
+        <!-- <img src="{{url_for ('static', filename='Untitled design.jpg')}}" alt=""> -->
+       
+        
+             <div class="signup">
+               <a href="/signup"> Sign up</a>
+            </div>
+        
+        <div class="matn">
+            Log in for ToDo List
+        </div>
+        <form class="forms">
+            <lable for="username">username:</lable>
+            <br>
+            <input
+            class="user" 
+            type="text"
+            placeholder="username"
+            required
+            name="username"
+            /> 
+            <br>
+            <lable for="password">password:</lable>
+            <br>
+            <input 
+            class="user"
+            type="password"
+            placeholder="password"
+            required
+            name="password"
+            /> 
+        </form> 
+    </div>
+</body>
+</html>

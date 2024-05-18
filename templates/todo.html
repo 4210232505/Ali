@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for ('static', filename='todo.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Office:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>TODO</title>
+    
+</head>
+<body >
+    <div class="headers">
+        <div class="sun">
+        <button id="night"><img src="{{url_for ('static', filename='moon-regular.svg')}}" alt="cross"></button>
+    </div>
+        <div class="corner">
+            <div id="user">A</div>
+            <br>
+            <button id="logout">log out</button>
+        </div>
+    </div>
+    <div class="container">
+
+
+        
+        <div class="todo">
+            
+            <div class="containerlist">
+                <div class="blank"></div>
+                <div class="input" id="in-container"> 
+                    <button id="int">+</button>
+                    <input type="text"
+                    class="cadr"
+                    placeholder="Enter Your Todo List">
+            </div>
+            <div class="input" id="ul-container">
+                <ul class="lists" draggable="true">
+                    <li class="list">
+                        <!-- <label for="test" class="check"></label> -->
+                        <div id="int">
+                            <input
+                            type="checkbox"
+                            id="test"
+                            class="check"
+                            >
+                        </div>  
+                        
+                        exersice
+                        <button id="edit"><img src="{{url_for ('static', filename='pen-solid(1).svg')}}" alt="cross">
+                        </button>
+                        <button id="zabdar"><img src="{{url_for ('static', filename='xmark-solid.svg')}}" alt="cross"></i>
+                        </button>
+                    </li>
+                   
+                </ul>
+            </div>
+        </div>
+            <div id="weather">
+                <a href="/weather">Go To Weather Application</a>
+            </div>
+        </div>
+        <div class="picture">
+            <!-- <img src="{{url_for ('static', filename='Untitled design.png')}}" alt="picture"> -->
+        </div>
+    </div>
+  
+    <div class="footer">
+        <div id="icons">
+            <i class="fa fa-youtube-square" style="font-size:32px;color:red"></i>
+            <br>    
+            <i class="fa fa-linkedin-square" style="font-size:32px;color:blue"></i>
+            <br>
+            <i class="fa fa-phone" style="font-size:32px;color:black"><span style="font-size: 10pt; color: black;">+989359303318</span></i>
+        </div>
+        <div id="about">
+            <div id="a" >
+                <a href="#">about me</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="{{url_for ('static', filename='javascript.js')}}"></script>
+</body>
+</html>

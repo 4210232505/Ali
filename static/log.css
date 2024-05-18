@@ -1,0 +1,103 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+/* log in */
+
+body{
+    background-image: url('Untitled\ design.jpg');
+    background-repeat: no-repeat;
+    background-size:1320px  ;
+    font-family:cursive,monospace ; 
+}
+
+.container{    
+    display: flex;
+    /* background-color: aqua; */
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.signup{
+    /* background-color: blue; */
+    display: flex;
+    align-items:flex-end ;
+    flex-direction: row;
+    /* justify-content: ; */
+    padding: 10px;
+    margin-left: auto;
+    
+}
+
+.matn{
+    /* background-color: blueviolet; */
+    padding: 40 0;
+    font-size: 66px;
+    color: ef951e;
+}
+
+.forms{
+    /* background-color: brown; */
+    padding: 20px 0;
+    font-size: 30px;
+    color: green;
+}
+
+.user{
+    border: 2px solid gray(170, 185, 186);
+    /* border-radius: 5%; */
+    width: 300px;
+    height: 40px;
+}
+
+
+/* sign up */
+
+.forms1{
+    /* background-color: brown; */
+    padding: 40 0;
+    font-size: 30px;
+    color: green;
+    display: flex;
+    flex-direction: column;
+    align-items:stretch;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    width: 300px;
+}
+
+
+.containerform{    
+    display: flex;
+    /* background-color: aqua; */
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    width: 300px;
+}
+
+.inputs{
+    width: 300px;
+    height: 35px;
+    font-size: large;
+}
+
+
+.submit{
+    color: rgb(173, 164, 114);
+    padding: 10px 20px;
+    font-size: 20pt;
+    cursor: pointer;
+   
+}
+
+.submit:hover{
+    background-color: black;
+    color: white;
+}

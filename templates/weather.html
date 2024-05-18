@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for ('static', filename='weather.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Office:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Weather</title>
+</head>
+<body>
+    <div class="headers">
+        <div class="sun">
+        <button class="night"><img src="{{url_for ('static', filename='moon-regular.svg')}}" alt="cross"></button>
+    </div>
+        <div class="corner">
+            <div id="user">A</div>
+            <br>
+            <button id="logout">log out</button>
+        </div>
+    </div>
+
+    <div class="background">
+        
+          
+        <div class="ul-container">
+            <input type="search"
+            name="city" 
+            class="city"
+            placeholder="Please Enter a City Name"
+            required>
+        
+            <ul class="lists">
+                <li class="list">
+                    TEHRAN
+                </li>
+                <li class="list">
+                    <i class="fa fa-cloud" style="font-size:66px;color:white; "></i>
+                </li>
+                <li class="list">
+                    2024/03/20
+                </li>
+            </ul>
+
+
+        </div>
+    </div>
+</body>
+</html>

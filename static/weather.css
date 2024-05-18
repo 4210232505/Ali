@@ -1,0 +1,122 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* font-family:  ,'Segoe UI', sans-serif , Tahoma, Geneva, Verdana; */
+    font-family: "Ysabeau Office", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:700 ;
+    font-style: normal;
+  }
+  
+
+
+.corner{
+    /* background-color: blue; */
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    margin-top: 2px;
+    margin-right: 10px;
+}
+
+
+
+.headers{
+    display: flex;
+    background-color: #7862bc;
+}
+
+.sun{
+    margin-right: auto;
+}
+
+
+.night{
+    margin-left: auto;
+    margin-top: 5px;
+    margin-left: 10px;
+    /* cursor: pointer; */
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+
+}
+
+
+
+.night:hover {
+    transform: rotatex(0deg);
+    transform: rotatey(180deg);
+}
+
+
+
+#user{
+    background-color: white;
+    border: 1px  solid white;
+    border-radius: 50%;
+    width: 23px;
+    height: 23px;
+    text-align: center;
+    font-size: 15px;
+}
+
+#logout{
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+
+.background{
+    background-image: url("Untitled design (1).png");
+    width: auto;
+    height: 1000px;
+}
+
+
+.ul-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.city{
+    margin-top: 10%;
+    height: 40px;
+    width: 50%;
+    font-size: 35pt;
+    text-align: center;
+    background-color: inherit;
+    border: none;
+    border-bottom: 3px solid white;
+    padding: 30px;
+    font-weight: 300;
+}
+
+.city:focus{
+    outline: none;
+
+}
+
+.lists{
+    margin-top: 5%;
+    column-gap:1cm;
+    list-style: none;
+    font-size: 33pt;
+    gap: 222px;
+    font-weight: 300;
+}
+
+.list{
+    margin-top: 5%;
+    column-gap:1cm;
+    list-style: none;
+    font-size: 33pt;
+    gap: 222px;
+    font-weight: 300;
+}

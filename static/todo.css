@@ -1,0 +1,274 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  /* font-family:  ,'Segoe UI', sans-serif , Tahoma, Geneva, Verdana; */
+  font-family: "Ysabeau Office", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 800px;
+  overflow: scroll;
+}
+
+.todo {
+  background-color: rgb(242, 235, 248);
+  display: flex;
+  width: 50%;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.dark {
+  background-color: grey;
+}
+
+.todo .input {
+  /* background-color: red; */
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  /* flex-direction: column; */
+  flex-wrap: nowrap;
+}
+
+.picture {
+  background-color: rgb(242, 235, 248);
+  background-image: url("Untitled design.jpg");
+  display: flex;
+  width: 50%;
+  /* flex-wrap: nowrap; */
+}
+
+.corner {
+  /* background-color: blue; */
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  margin-top: 2px;
+  margin-right: 10px;
+}
+
+.cadr {
+  background-color: #666266;
+  border: none;
+  font-size: 30px;
+  width: 75%;
+  font-weight: 100;
+  font-size: 22pt;
+  color: white;
+  font-weight: 700;
+  outline: none;
+}
+
+.lists {
+  background-color: antiquewhite;
+  margin-top: 10px;
+  font-size: 30px;
+  border-bottom: 2px solid gray;
+  width: 85%;
+  list-style-type: none;
+  /* border-radius: 10px; */
+  gap: 0px;
+  border-radius: 10px;
+}
+
+.lists:hover {
+  cursor: move;
+}
+
+#int {
+  background-color: #666266;
+  border: none;
+  text-align: center;
+  font-size: 28px;
+  text-align: center;
+  color: white;
+  display: flex;
+  cursor: pointer;
+}
+
+.list {
+  display: flex;
+  text-wrap: nowrap;
+  justify-content: center;
+  padding-bottom: 5px;
+  width: 100%;
+  gap: 10px;
+  border-bottom: 2px solid gray;
+  font-weight: 100;
+  font-size: 22pt;
+  background-color: #666266;
+  color: #c4c1c4;
+  font-weight: 500;
+}
+
+#edit {
+  background-color: #666266;
+  /* width: 40px;
+    height: 40px;
+    border-radius: 50%; */
+  margin-left: auto;
+  border: none;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  opacity: 0;
+}
+
+#zabdar {
+  background-color: #666266;
+  /* width: 40px;
+    height: 40px;
+    border-radius: 50%; */
+  /* margin-left: 2px; */
+  border: none;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  opacity: 0;
+}
+
+#zabdar:hover {
+  opacity: 0.5;
+}
+
+#edit:hover {
+  opacity: 0.5;
+}
+
+#weather {
+  margin-top: 200px;
+  opacity: 50%;
+}
+
+.footer {
+  /* background-color: coral; */
+  height: 200px;
+  display: flex;
+  border-top: 2px solid rgb(156, 154, 154);
+}
+
+#icons {
+  /* background-color: blue; */
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* align-content: space-between; */
+  margin: 40px;
+  border-right: 2px solid rgb(156, 154, 154);
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  text-align: center;
+  margin-top: 100px;
+  /* background-color: brown; */
+}
+
+.inputs {
+  display: flex;
+  justify-content: center;
+}
+
+#night {
+  margin-left: auto;
+  margin-top: 5px;
+  margin-left: 10px;
+  /* cursor: pointer; */
+  border: none;
+  background-color: #666266;
+}
+
+#night:hover {
+  transform: rotatex(0deg);
+  transform: rotatey(180deg);
+}
+
+.input {
+  /* background-color: blue; */
+  padding: 20px;
+  width: 50%;
+  gap: 10px;
+  border-radius: 10px;
+}
+
+#in-container {
+  padding: 20px;
+  background-color: #666266;
+}
+
+/* 
+.input ul{
+    margin: 20px 50px;
+    background-color: rgb(16, 16, 143);
+}    */
+
+#ul-container {
+  padding: 20px;
+  background-color: #666266;
+  border-top: 2px solid white;
+}
+
+.containerlist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  /* gap: 20px; */
+}
+
+.headers {
+  display: flex;
+  background-color: #666266;
+  position: fixed;
+  width: 100%;
+}
+
+.sun {
+  margin-right: auto;
+}
+
+.blank {
+  padding: 50px;
+}
+
+#user {
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 23px;
+  height: 23px;
+  text-align: center;
+  font-size: 15px;
+}
+
+#logout {
+  background-color: #666266;
+  border: none;
+}
+
+input[type="checkbox"] {
+  display: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  /* align-items:end;
+        justify-content: flex-end; */
+  align-self: flex-end;
+  /* position: relative; */
+}
